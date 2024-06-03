@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> -->
+  <meta name="viewport" content="width=1024, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- SWIPER -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- SWIPER -->
+  <link rel="stylesheet" href="./styles/styles.css">
+  <title>SHREDERS</title>
+</head>
+
+<body>
+  <header class="header" id="header">
+    <div class="header__inner container">
+      <nav class="header__menu hidden-mobile">
+        <ul class="header__menu-list">
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#header">Главная</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#product">Товары</a>
+          </li>
+          <!-- <li class="header__menu-item">
+            <a class="header__menu-link" href="/">Контакты</a>
+          </li> -->
+        </ul>
+      </nav>
+      <!-- <button class="header__button button button--transparent hidden-mobile" type="button">
+        Заказать
+      </button> -->
+      <a href="#send" class="header__button button button--transparent hidden-mobile" type="button">
+        Заказать
+      </a>
+      <button class="header__burger-button burger-button visible-mobile" type="button"
+        onclick="mobileOverlay.showModal()">
+        <span class="visually-hidden">Open navigation menu</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="content">
+    <section class="section section--hidden-x container section__hero">
+      <div class="section__body">
+        <div class="hero">
+          <div class="hero__main">
+            <div class="hero__body">
+              <h1 class="hero__title puddle-bg">
+                Мощь и Надежность <br> в разрезе
+              </h1>
+              <div class="hero__description">
+                <p>
+                  Наша компания разрабатывает и производит передовые шредеры, отличающиеся надежностью и эффективностью.
+                  Используя наш обширный опыт и современные технологии, мы предоставляем партнерам
+                  высокопроизводительное оборудование, идеально адаптированное для любых бизнес-целей.</p>
+              </div>
+              <!-- <button class="hero__button button" type="button">
+                Связаться с нами
+              </button> -->
+              <a href="#send" class="hero__button button" type="button">
+                Связаться с нами
+              </a>
+            </div>
+            <!-- <img class="hero__image" src="./images/bg-1.png" alt="" width="600" height="515" loading="lazy" /> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="product">
+      <header class="section__header">
+        <h2 class="section__title puddle-bg">Наши продукты</h2>
+        <div class="section__description">
+          <p>Наша компания — производитель оборудования, предназначенного для измельчения или переработки отходов
+            разного рода.</p>
+        </div>
+      </header>
+      <div class="section__body">
+        <div class="services">
+
+          <!-- SLIDER -->
+          <div class="swiper MySwiper">
+            <ul class="services__list swiper-wrapper">
+              <li class="services__item swiper-slide">
+                <article class="service-card">
+                  <div class="service-card__body">
+                    <h3 class="service-card__title">
+                      <span class="puddle-bg">Одновальный Шредер</span>
+                    </h3>
+                    <img class="service-card__image" src="./images/one-shreder/one.png" alt="" width="210" height="170"
+                      loading="lazy" />
+                    <a class="service-card__link" href="/" data-modal="modal1">
+                      <span class="service-card__link-icon-wrapper">
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M1.25 13.701C0.532561 14.1152 0.286748 15.0326 0.700962 15.75C1.11518 16.4674 2.03256 16.7133 2.75 16.299L1.25 13.701ZM20.7694 5.38823C20.9838 4.58803 20.5089 3.76552 19.7087 3.55111L6.66874 0.0570541C5.86854 -0.157359 5.04603 0.317515 4.83162 1.11771C4.61721 1.91791 5.09208 2.74042 5.89228 2.95483L17.4834 6.06066L14.3776 17.6518C14.1631 18.452 14.638 19.2745 15.4382 19.4889C16.2384 19.7033 17.0609 19.2284 17.2753 18.4282L20.7694 5.38823ZM2.75 16.299L20.0705 6.29904L18.5705 3.70096L1.25 13.701L2.75 16.299Z"
+                            fill="#B9FF66" />
+                        </svg>
+                      </span>
+                      <span class="service-card__link-label">Смотреть</span>
+                    </a>
+                  </div>
+
+                </article>
+              </li>
+
+              <li class="services__item swiper-slide">
+                <article class="service-card">
+                  <div class="service-card__body">
+                    <h3 class="service-card__title">
+                      <span class="puddle-bg">Двухвальный Шредер</span>
+                    </h3>
+                    <img class="service-card__image" src="./images/two-shreder/two.png" alt="" width="210" height="170"
+                      loading="lazy" />
+                    <a class="service-card__link" href="/" data-modal="modal2">
+                      <span class="service-card__link-icon-wrapper">
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M1.25 13.701C0.532561 14.1152 0.286748 15.0326 0.700962 15.75C1.11518 16.4674 2.03256 16.7133 2.75 16.299L1.25 13.701ZM20.7694 5.38823C20.9838 4.58803 20.5089 3.76552 19.7087 3.55111L6.66874 0.0570541C5.86854 -0.157359 5.04603 0.317515 4.83162 1.11771C4.61721 1.91791 5.09208 2.74042 5.89228 2.95483L17.4834 6.06066L14.3776 17.6518C14.1631 18.452 14.638 19.2745 15.4382 19.4889C16.2384 19.7033 17.0609 19.2284 17.2753 18.4282L20.7694 5.38823ZM2.75 16.299L20.0705 6.29904L18.5705 3.70096L1.25 13.701L2.75 16.299Z"
+                            fill="#B9FF66" />
+                        </svg>
+                      </span>
+                      <span class="service-card__link-label">Смотреть</span>
+                    </a>
+                  </div>
+                </article>
+              </li>
+
+              <li class="services__item swiper-slide">
+                <article class="service-card">
+                  <div class="service-card__body">
+                    <h3 class="service-card__title">
+                      <span class="puddle-bg">Режущая часть одновального шредера</span>
+                    </h3>
+                    <img class="service-card__image" src="./images/cutting-one-shreder/one.png" alt="" width="210"
+                      height="170" loading="lazy" />
+                    <a class="service-card__link" href="/" data-modal="modal3">
+                      <span class="service-card__link-icon-wrapper">
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M1.25 13.701C0.532561 14.1152 0.286748 15.0326 0.700962 15.75C1.11518 16.4674 2.03256 16.7133 2.75 16.299L1.25 13.701ZM20.7694 5.38823C20.9838 4.58803 20.5089 3.76552 19.7087 3.55111L6.66874 0.0570541C5.86854 -0.157359 5.04603 0.317515 4.83162 1.11771C4.61721 1.91791 5.09208 2.74042 5.89228 2.95483L17.4834 6.06066L14.3776 17.6518C14.1631 18.452 14.638 19.2745 15.4382 19.4889C16.2384 19.7033 17.0609 19.2284 17.2753 18.4282L20.7694 5.38823ZM2.75 16.299L20.0705 6.29904L18.5705 3.70096L1.25 13.701L2.75 16.299Z"
+                            fill="#B9FF66" />
+                        </svg>
+                      </span>
+                      <span class="service-card__link-label">Смотреть</span>
+                    </a>
+                  </div>
+                </article>
+              </li>
+
+            </ul>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+          </div>
+          <!-- SLIDER -->
+
+          <!-- Modal windows -->
+          <div id="modal1" class="modal">
+            <div class="modal-content">
+              <span class="close" data-modal="modal1">&times;</span>
+              <div class="modal__card">
+
+                <h3 class="modal__card-title">
+                  <span class="puddle-bg">Одновальный Шредер</span>
+                </h3>
+
+                <div class="modal__card-content">
+                  <div class="modal__card-left">
+
+                    <ul class="modal__card-list">
+                      <h4 class="modal__card-list-title">
+                        Характеристики
+                      </h4>
+                      <li class="modal__card-item">Мотор-редуктор NMRV090-20-70-2,2кВт</li>
+                      <li class="modal__card-item">Передаточное число: 20</li>
+                      <li class="modal__card-item">Обороты выходного вала: 70 об/мин</li>
+                      <li class="modal__card-item">Крутящий момент: 252 Н*м</li>
+                      <li class="modal__card-item">Сервис фактор: 1.4</li>
+                      <li class="modal__card-item">Мощность электродвигателя: 2,2 кВт</li>
+                      <li class="modal__card-item">Вал закаленный до 45 единиц (сталь 30ХГСА)</li>
+                      <li class="modal__card-item">Ножи сделаны из стали AISI 304</li>
+                      <li class="modal__card-item">Калибровочная сетка 5-10 мм</li>
+                      <li class="modal__card-item">Напряжение 380В</li>
+                      <li class="modal__card-item">Загрузочный бункер под ваш размер</li>
+                      <li class="modal__card-item">Размеры рамы 600х400х650 мм</li>
+
+                    </ul>
+
+                    <!-- <button class="modal__button button" type="button">
+                      Связаться с нами
+                    </button> -->
+
+                    <a href="#send" class="modal__button button modal__button-close close-btn" data-modal="modal1" type="button">
+                      Связаться с нами
+                    </a>
+                  </div>
+
+                  <div class="modal__card-right slider-container">
+
+                    <!-- Additional required wrapper -->
+                    <div class="modal__card-slider">
+                      <!-- Slides -->
+                      <img src="./images/one-shreder/1.png" alt="">
+
+                      <img src="./images/one-shreder/2.png" alt="">
+
+                      <img src="./images/one-shreder/3.png" alt="">
+                    </div>
+
+                    <!-- If we need navigation buttons -->
+                    <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
+                    <button class="next-button" aria-label="Посмотреть следующий слайд">&gt</button>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Modal windows -->
+          <div id="modal2" class="modal">
+            <div class="modal-content">
+              <span class="close" data-modal="modal2">&times;</span>
+              <div class="modal__card">
+
+                <h3 class="modal__card-title">
+                  <span class="puddle-bg">Двухвальный Шредер</span>
+                </h3>
+
+                <div class="modal__card-content">
+                  <div class="modal__card-left">
+
+                    <ul class="modal__card-list">
+                      <h4 class="modal__card-list-title">
+                        Характеристики
+                      </h4>
+                      <li class="modal__card-item">Мотор-редуктор NMRV090-20-70-2,2кВт</li>
+                      <li class="modal__card-item">Передаточное число: 20</li>
+                      <li class="modal__card-item">Обороты выходного вала: 70 об/мин</li>
+                      <li class="modal__card-item">Крутящий момент: 252 Н*м</li>
+                      <li class="modal__card-item">Сервис фактор: 1.4</li>
+                      <li class="modal__card-item">Мощность электродвигателя: 2,2 кВт</li>
+                      <li class="modal__card-item">17 ножей на каждом валу, толщиной 5 мм</li>
+                      <li class="modal__card-item">Ножи сделаны из стали AISI 304</li>
+                      <li class="modal__card-item">Загрузочный бункер под ваш размер</li>
+                      <li class="modal__card-item">Напряжение 380В</li>
+                      <li class="modal__card-item">Рама 700х400х600 мм</li>
+
+                    </ul>
+
+                    <!-- <button class="modal__button button" type="button">
+                      Связаться с нами
+                    </button> -->
+
+                    <a href="#send" class="modal__button button modal__button-close close-btn" data-modal="modal2" type="button">
+                      Связаться с нами
+                    </a>
+                  </div>
+
+                  <div class="modal__card-right slider-container">
+
+                    <!-- Additional required wrapper -->
+                    <div class="modal__card-slider">
+                      <!-- Slides -->
+                      <img src="./images/two-shreder/1.png" alt="">
+
+                      <img src="./images/two-shreder/2.png" alt="">
+
+                      <img src="./images/two-shreder/3.png" alt="">
+
+                      <img src="./images/two-shreder/4.png" alt="">
+                    </div>
+
+                    <!-- If we need navigation buttons -->
+                    <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
+                    <button class="next-button" aria-label="Посмотреть следующий слайд">&gt</button>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal windows -->
+          <div id="modal3" class="modal">
+            <div class="modal-content">
+              <span class="close" data-modal="modal3">&times;</span>
+              <div class="modal__card">
+
+                <h3 class="modal__card-title">
+                  <span class="puddle-bg">Режущая часть одновального шредера</span>
+                </h3>
+
+                <div class="modal__card-content">
+                  <div class="modal__card-left">
+
+                    <ul class="modal__card-list">
+                      <h4 class="modal__card-list-title">
+                        Характеристики
+                      </h4>
+                      <li class="modal__card-item">Ножи и корпус сделаны из стали AISI304</li>
+                      <li class="modal__card-item">Вал закаленный из стали 30ХГСА</li>
+                      <li class="modal__card-item">Рабочая часть 150х130 мм</li>
+                      <li class="modal__card-item">Диаметр выходного вала 20мм</li>
+                      <li class="modal__card-item">Калибровочная сетка 5мм</li>
+
+                    </ul>
+
+                    <!-- <button class="modal__button button" type="button">
+                      Связаться с нами
+                    </button> -->
+
+                    <a href="#send" class="modal__button button modal__button-close close-btn" data-modal="modal3" type="button">
+                      Связаться с нами
+                    </a>
+                  </div>
+
+                  <div class="modal__card-right slider-container">
+
+                    <!-- Additional required wrapper -->
+                    <div class="modal__card-slider">
+                      <!-- Slides -->
+                      <img src="./images/cutting-one-shreder/1.png" alt="">
+
+                      <img src="./images/cutting-one-shreder/2.png" alt="">
+
+                      <img src="./images/cutting-one-shreder/3.png" alt="">
+
+                    </div>
+
+                    <!-- If we need navigation buttons -->
+                    <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
+                    <button class="next-button" aria-label="Посмотреть следующий слайд">&gt</button>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Add other modals similarly -->
+
+          <div class="services__banner banner">
+            <div class="banner__inner">
+              <div class="banner__body">
+                <h3 class="banner__title">Сомневаетесь в выборе продукта?</h3>
+                <div class="banner__description">
+                  <p>Наши специалисты готовы ответить на все вопросы о дробильном оборудовании. Используйте онлайн-форму
+                    для связи с нами.</p>
+                </div>
+                <!-- <button class="banner__button button" type="button">
+                  Связаться с нами
+                </button> -->
+                <a href="#send" class="banner__button button" type="button">
+                  Связаться с нами
+                </a>
+              </div>
+              <img class="banner__image hidden-mobile" src="./images/bg-1.png" alt="" width="494" height="394"
+                loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="send">
+    <header class="section__header">
+        <h2 class="section__title puddle-bg">Контакты</h2>
+        <div class="section__description">
+            <p>Свяжитесь с нами: Давайте обсудим Ваши потребности</p>
+        </div>
+    </header>
+    <div class="section__body">
+        <div class="contact-us">
+            <form id="contactForm" class="contact-us__form">
+                <div class="contact-us__body">
+                    <div class="contact-us__field field">
+                        <label class="field__label" for="name">ФИО</label>
+                        <input class="field__input" id="name" name="name" placeholder="ФИО" />
+                    </div>
+                    <div class="contact-us__field field">
+                        <label class="field__label" for="phone">Телефон</label>
+                        <input class="field__input" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required type="tel" />
+                    </div>
+                    <div class="contact-us__field field">
+                        <label class="field__label" for="city">Город</label>
+                        <input class="field__input" id="city" name="city" placeholder="Город" />
+                    </div>
+                </div>
+                <button class="contact-us__button button" type="submit">Связаться с нами</button>
+                <input type="hidden" name="act" value="order">
+            </form>
+        </div>
+    </div>
+</section>
+  </main>
+
+  <footer class="footer container">
+    <div class="footer__inner">
+      <div class="footer__extra">
+        <p class="footer__copyright">
+          © <time datetime="2023">2024</time> Все права защищены.
+        </p>
+        <!-- <a class="footer__privacy-policy-link" href="/">политика конфиденциальности</a> -->
+      </div>
+    </div>
+  </footer>
+
+  <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+    <form class="mobile-overlay__close-button-wrapper" method="dialog">
+      <button class="mobile-overlay__close-button cross-button" type="submit">
+        <span class="visually-hidden">Close navigation menu</span>
+      </button>
+    </form>
+    <div class="mobile-overlay__body">
+      <ul class="mobile-overlay__list">
+        <li class="mobile-overlay__item">
+          <a class="mobile-overlay__link" href="#header">Главная</a>
+        </li>
+        <li class="mobile-overlay__item">
+          <a class="mobile-overlay__link" href="#product">Товары</a>
+        </li>
+        <li class="mobile-overlay__item">
+          <a class="mobile-overlay__link" href="#send">Заказать</a>
+        </li>
+      </ul>
+    </div>
+  </dialog>
+
+    <!-- Модальное окно для успешной отправки -->
+  <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title puddle-bg" id="successModalLabel">Заявка отправлена</h5>
+                  <span type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      &times;
+                  </span>
+              </div>
+              <div class="modal-body">
+                  Ваша заявка принята, мы свяжемся с вами в ближайшее время!
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Модальное окно для ошибки отправки -->
+  <div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="errorModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="errorModalLabel">Ошибка</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  Что-то пошло не так. Попробуйте отправить форму ещё раз.
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- SWIPER -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./script/swiper.js"></script>
+  <script src="./script/script.js"></script>
+  <!-- SWIPER -->
+
+  <!-- MODAL -->
+  <script src="./script/modal.js"></script>
+  <!-- MODAL -->
+
+  <!-- PHONE -->
+  <script src="./script/phone.js"></script>
+  <script src="./script/jakor.js"></script>
+  <!-- PHONE -->
+</body>
+
+</html>
